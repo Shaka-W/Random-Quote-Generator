@@ -4,13 +4,15 @@ const newQuote = document.querySelector('#new-quote');
 const tweetQuote = document.querySelector('#tweet-quote');
 
 const quote = document.querySelector('.quote');
+
 // Quotes
 let quotes = ['"Happiness is a state of activity." - Aristole', '"Life is really simple, but we insist on making it complicated." - Confucius', '"Action is the foundational key to all success." - Pablo Picasso', '"Judge your success by what you had to give up in order to get it." - Dalai Lama', '"Don\'t let what you cannot do interfere with what you can do." - John R. Wooden', ];
 
-// Random number
+
 newQuote.addEventListener('click', (e) => {
 
-    let randomNumber = Math.floor(Math.random() * (quotes.length));
+   // Random number
+   let randomNumber = Math.floor(Math.random() * (quotes.length));
   
    switch(randomNumber) {
         case 0:
